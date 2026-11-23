@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Entity;
+namespace Endurance\Route\Entity;
 
-use Youmad\Endurance\Foundation\ValueObject\Instant;
-use Youmad\Endurance\Route\ValueObject\GeometryCoverage;
-use Youmad\Endurance\Route\ValueObject\RevisionProperties;
-use Youmad\Endurance\Route\ValueObject\RouteContentSummary;
-use Youmad\Endurance\Route\ValueObject\RouteId;
-use Youmad\Endurance\Route\ValueObject\RouteRevisionId;
+use Endurance\Foundation\ValueObject\Instant;
+use Endurance\Route\ValueObject\GeometryCoverage;
+use Endurance\Route\ValueObject\RevisionProperties;
+use Endurance\Route\ValueObject\RouteContentSummary;
+use Endurance\Route\ValueObject\RouteId;
+use Endurance\Route\ValueObject\RouteRevisionId;
 
 final readonly class RouteRevision
 {

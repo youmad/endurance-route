@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\ValueObject;
+namespace Endurance\Route\ValueObject;
 
 /** Source coverage, independently of continuity and fitness for navigation. */
 enum GeometryCoverage: string

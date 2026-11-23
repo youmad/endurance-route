@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Application\UseCase;
+namespace Endurance\Route\Application\UseCase;
 
-use Youmad\Endurance\Foundation\Clock\Clock;
-use Youmad\Endurance\Route\Application\Port\RouteRepository;
-use Youmad\Endurance\Route\Entity\Route;
-use Youmad\Endurance\Route\ValueObject\ExpectedRouteState;
-use Youmad\Endurance\Route\ValueObject\RouteId;
-use Youmad\Endurance\Route\ValueObject\RouteMetadata;
+use Endurance\Foundation\Clock\Clock;
+use Endurance\Route\Application\Port\RouteRepository;
+use Endurance\Route\Entity\Route;
+use Endurance\Route\ValueObject\ExpectedRouteState;
+use Endurance\Route\ValueObject\RouteId;
+use Endurance\Route\ValueObject\RouteMetadata;
 
 final readonly class EditRouteMetadata
 {

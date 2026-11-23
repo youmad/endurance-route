@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Application\Port;
+namespace Endurance\Route\Application\Port;
 
-use Youmad\Endurance\Route\Entity\Route;
-use Youmad\Endurance\Route\Exception\RouteConflict;
-use Youmad\Endurance\Route\Exception\RouteNotFound;
-use Youmad\Endurance\Route\Exception\RouteRevisionAlreadyExists;
-use Youmad\Endurance\Route\ValueObject\ExpectedRouteState;
-use Youmad\Endurance\Route\ValueObject\RouteId;
-use Youmad\Endurance\Route\ValueObject\RouteRevisionId;
+use Endurance\Route\Entity\Route;
+use Endurance\Route\Exception\RouteConflict;
+use Endurance\Route\Exception\RouteNotFound;
+use Endurance\Route\Exception\RouteRevisionAlreadyExists;
+use Endurance\Route\ValueObject\ExpectedRouteState;
+use Endurance\Route\ValueObject\RouteId;
+use Endurance\Route\ValueObject\RouteRevisionId;
 
 interface RouteRepository
 {

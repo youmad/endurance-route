@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Application\Port;
+namespace Endurance\Route\Application\Port;
 
-use Youmad\Endurance\Geo\PathPoint;
-use Youmad\Endurance\Geo\PathPosition;
-use Youmad\Endurance\Geo\ViaPoint;
-use Youmad\Endurance\Route\Entity\Route;
-use Youmad\Endurance\Route\Entity\RouteRevision;
-use Youmad\Endurance\Route\ValueObject\ExpectedRouteState;
-use Youmad\Endurance\Route\ValueObject\NavigationCue;
-use Youmad\Endurance\Route\ValueObject\RouteWaypoint;
+use Endurance\Geo\PathPoint;
+use Endurance\Geo\PathPosition;
+use Endurance\Geo\ViaPoint;
+use Endurance\Route\Entity\Route;
+use Endurance\Route\Entity\RouteRevision;
+use Endurance\Route\ValueObject\ExpectedRouteState;
+use Endurance\Route\ValueObject\NavigationCue;
+use Endurance\Route\ValueObject\RouteWaypoint;
 
 /**
  * One revision reservation. Appends copy values into staging, not references to

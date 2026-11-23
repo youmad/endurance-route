@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Application\UseCase;
+namespace Endurance\Route\Application\UseCase;
 
-use Youmad\Endurance\Foundation\Clock\Clock;
-use Youmad\Endurance\Route\Application\Port\RouteRepository;
-use Youmad\Endurance\Route\Application\RevisionContent;
-use Youmad\Endurance\Route\Application\RouteContentValidator;
-use Youmad\Endurance\Route\Entity\Route;
-use Youmad\Endurance\Route\Entity\RouteRevision;
-use Youmad\Endurance\Route\Exception\RouteWriteFailure;
-use Youmad\Endurance\Route\ValueObject\ExpectedRouteState;
-use Youmad\Endurance\Route\ValueObject\RevisionProperties;
-use Youmad\Endurance\Route\ValueObject\RouteId;
-use Youmad\Endurance\Route\ValueObject\RouteMetadata;
-use Youmad\Endurance\Route\ValueObject\RouteRevisionId;
+use Endurance\Foundation\Clock\Clock;
+use Endurance\Route\Application\Port\RouteRepository;
+use Endurance\Route\Application\RevisionContent;
+use Endurance\Route\Application\RouteContentValidator;
+use Endurance\Route\Entity\Route;
+use Endurance\Route\Entity\RouteRevision;
+use Endurance\Route\Exception\RouteWriteFailure;
+use Endurance\Route\ValueObject\ExpectedRouteState;
+use Endurance\Route\ValueObject\RevisionProperties;
+use Endurance\Route\ValueObject\RouteId;
+use Endurance\Route\ValueObject\RouteMetadata;
+use Endurance\Route\ValueObject\RouteRevisionId;
 
 final readonly class PublishRoute
 {

@@ -1,21 +1,21 @@
 {
-    "name": "youmad/endurance-route",
+    "name": "endurance/route",
     "description": "Routes, immutable content revisions and streaming publication contracts",
     "type": "library",
     "license": "MPL-2.0",
     "require": {
         "php": "^8.5",
-        "youmad/endurance-foundation": "^0.1.2",
-        "youmad/endurance-geo": "^0.1.0"
+        "endurance/foundation": "^0.2.0",
+        "endurance/geo": "^0.2.0"
     },
     "autoload": {
         "psr-4": {
-            "Youmad\\Endurance\\Route\\": "src/"
+            "Endurance\\Route\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Youmad\\Endurance\\Route\\Tests\\": "tests/"
+            "Endurance\\Route\\Tests\\": "tests/"
         }
     },
     "require-dev": {

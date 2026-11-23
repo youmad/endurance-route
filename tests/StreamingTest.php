@@ -2,31 +2,31 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Tests;
+namespace Endurance\Route\Tests;
 
+use Endurance\Foundation\Clock\FrozenClock;
+use Endurance\Foundation\ValueObject\Coordinate;
+use Endurance\Foundation\ValueObject\Instant;
+use Endurance\Geo\PathGeometry;
+use Endurance\Geo\PathPoint;
+use Endurance\Geo\PathPosition;
+use Endurance\Geo\ViaPoint;
+use Endurance\Route\Application\Port\RouteRepository;
+use Endurance\Route\Application\Port\RouteRevisionWriter;
+use Endurance\Route\Application\RevisionContent;
+use Endurance\Route\Application\UseCase\PublishRoute;
+use Endurance\Route\Entity\Route;
+use Endurance\Route\Entity\RouteRevision;
+use Endurance\Route\Exception\RouteNotFound;
+use Endurance\Route\ValueObject\ExpectedRouteState;
+use Endurance\Route\ValueObject\GeometryCoverage;
+use Endurance\Route\ValueObject\NavigationCue;
+use Endurance\Route\ValueObject\RevisionProperties;
+use Endurance\Route\ValueObject\RouteId;
+use Endurance\Route\ValueObject\RouteMetadata;
+use Endurance\Route\ValueObject\RouteRevisionId;
+use Endurance\Route\ValueObject\RouteWaypoint;
 use PHPUnit\Framework\TestCase;
-use Youmad\Endurance\Foundation\Clock\FrozenClock;
-use Youmad\Endurance\Foundation\ValueObject\Coordinate;
-use Youmad\Endurance\Foundation\ValueObject\Instant;
-use Youmad\Endurance\Geo\PathGeometry;
-use Youmad\Endurance\Geo\PathPoint;
-use Youmad\Endurance\Geo\PathPosition;
-use Youmad\Endurance\Geo\ViaPoint;
-use Youmad\Endurance\Route\Application\Port\RouteRepository;
-use Youmad\Endurance\Route\Application\Port\RouteRevisionWriter;
-use Youmad\Endurance\Route\Application\RevisionContent;
-use Youmad\Endurance\Route\Application\UseCase\PublishRoute;
-use Youmad\Endurance\Route\Entity\Route;
-use Youmad\Endurance\Route\Entity\RouteRevision;
-use Youmad\Endurance\Route\Exception\RouteNotFound;
-use Youmad\Endurance\Route\ValueObject\ExpectedRouteState;
-use Youmad\Endurance\Route\ValueObject\GeometryCoverage;
-use Youmad\Endurance\Route\ValueObject\NavigationCue;
-use Youmad\Endurance\Route\ValueObject\RevisionProperties;
-use Youmad\Endurance\Route\ValueObject\RouteId;
-use Youmad\Endurance\Route\ValueObject\RouteMetadata;
-use Youmad\Endurance\Route\ValueObject\RouteRevisionId;
-use Youmad\Endurance\Route\ValueObject\RouteWaypoint;
 
 final class StreamingTest extends TestCase
 {

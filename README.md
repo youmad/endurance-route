@@ -3,14 +3,14 @@
 Immutable Route revisions, streamed content and optimistic publication for PHP 8.5.
 
 ```bash
-composer require youmad/endurance-route
+composer require endurance/route
 ```
 
 Supply a `RouteRepository`, caller-generated IDs and prepared content:
 
 ```php
-use Youmad\Endurance\Foundation\Clock\SystemClock;
-use Youmad\Endurance\Route\Application\UseCase\PublishRoute;
+use Endurance\Foundation\Clock\SystemClock;
+use Endurance\Route\Application\UseCase\PublishRoute;
 
 $publisher = new PublishRoute($repository, new SystemClock());
 $route = $publisher->create($routeId, $revisionId, $metadata, $properties, $content);

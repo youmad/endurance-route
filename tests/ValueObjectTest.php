@@ -2,25 +2,25 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Tests;
+namespace Endurance\Route\Tests;
 
+use Endurance\Foundation\ValueObject\Coordinate;
+use Endurance\Foundation\ValueObject\Instant;
+use Endurance\Route\Entity\Route;
+use Endurance\Route\Entity\RouteRevision;
+use Endurance\Route\ValueObject\NavigationCue;
+use Endurance\Route\ValueObject\ReportedDistance;
+use Endurance\Route\ValueObject\RevisionProperties;
+use Endurance\Route\ValueObject\RevisionProvenance;
+use Endurance\Route\ValueObject\RouteContentSummary;
+use Endurance\Route\ValueObject\RouteId;
+use Endurance\Route\ValueObject\RouteMetadata;
+use Endurance\Route\ValueObject\RouteRevisionId;
+use Endurance\Route\ValueObject\RouteVersion;
+use Endurance\Route\ValueObject\RouteWaypoint;
+use Endurance\Route\ValueObject\ViaPointAnchor;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use Youmad\Endurance\Foundation\ValueObject\Coordinate;
-use Youmad\Endurance\Foundation\ValueObject\Instant;
-use Youmad\Endurance\Route\Entity\Route;
-use Youmad\Endurance\Route\Entity\RouteRevision;
-use Youmad\Endurance\Route\ValueObject\NavigationCue;
-use Youmad\Endurance\Route\ValueObject\ReportedDistance;
-use Youmad\Endurance\Route\ValueObject\RevisionProperties;
-use Youmad\Endurance\Route\ValueObject\RevisionProvenance;
-use Youmad\Endurance\Route\ValueObject\RouteContentSummary;
-use Youmad\Endurance\Route\ValueObject\RouteId;
-use Youmad\Endurance\Route\ValueObject\RouteMetadata;
-use Youmad\Endurance\Route\ValueObject\RouteRevisionId;
-use Youmad\Endurance\Route\ValueObject\RouteVersion;
-use Youmad\Endurance\Route\ValueObject\RouteWaypoint;
-use Youmad\Endurance\Route\ValueObject\ViaPointAnchor;
 
 final class ValueObjectTest extends TestCase
 {

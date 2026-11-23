@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Application\Port;
+namespace Endurance\Route\Application\Port;
 
-use Youmad\Endurance\Geo\PathGeometry;
-use Youmad\Endurance\Geo\ViaPoints;
-use Youmad\Endurance\Route\Entity\RouteRevision;
-use Youmad\Endurance\Route\Exception\RouteRevisionNotFound;
-use Youmad\Endurance\Route\ValueObject\NavigationCue;
-use Youmad\Endurance\Route\ValueObject\RouteRevisionId;
-use Youmad\Endurance\Route\ValueObject\RouteWaypoint;
+use Endurance\Geo\PathGeometry;
+use Endurance\Geo\ViaPoints;
+use Endurance\Route\Entity\RouteRevision;
+use Endurance\Route\Exception\RouteRevisionNotFound;
+use Endurance\Route\ValueObject\NavigationCue;
+use Endurance\Route\ValueObject\RouteRevisionId;
+use Endurance\Route\ValueObject\RouteWaypoint;
 
 /**
  * Published data only. Each call opens a fresh stream pinned to this exact ID,

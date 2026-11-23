@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\ValueObject;
+namespace Endurance\Route\ValueObject;
 
-use Youmad\Endurance\Geo\PathPosition;
+use Endurance\Geo\PathPosition;
 
 final readonly class GeometryAnchor
 {

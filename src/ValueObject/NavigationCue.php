@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\ValueObject;
+namespace Endurance\Route\ValueObject;
 
-use Youmad\Endurance\Foundation\ValueObject\Coordinate;
+use Endurance\Foundation\ValueObject\Coordinate;
 
 final readonly class NavigationCue
 {

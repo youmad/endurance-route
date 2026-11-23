@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Application;
+namespace Endurance\Route\Application;
 
-use Youmad\Endurance\Route\Application\Port\RouteRevisionWriter;
-use Youmad\Endurance\Route\ValueObject\GeometryAnchor;
-use Youmad\Endurance\Route\ValueObject\NavigationCue;
-use Youmad\Endurance\Route\ValueObject\RouteContentSummary;
-use Youmad\Endurance\Route\ValueObject\RouteRevisionId;
-use Youmad\Endurance\Route\ValueObject\RouteWaypoint;
-use Youmad\Endurance\Route\ValueObject\ViaPointAnchor;
+use Endurance\Route\Application\Port\RouteRevisionWriter;
+use Endurance\Route\ValueObject\GeometryAnchor;
+use Endurance\Route\ValueObject\NavigationCue;
+use Endurance\Route\ValueObject\RouteContentSummary;
+use Endurance\Route\ValueObject\RouteRevisionId;
+use Endurance\Route\ValueObject\RouteWaypoint;
+use Endurance\Route\ValueObject\ViaPointAnchor;
 
 /** Exhaust all inputs before publication; retain counts only, not a path-sized index. */
 final class RouteContentValidator

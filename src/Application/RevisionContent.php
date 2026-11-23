@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Application;
+namespace Endurance\Route\Application;
 
-use Youmad\Endurance\Geo\PathGeometry;
-use Youmad\Endurance\Geo\ViaPoints;
+use Endurance\Geo\PathGeometry;
+use Endurance\Geo\ViaPoints;
 
 /** Streams may be single-pass; annotations are validated only when consumed. */
 final readonly class RevisionContent

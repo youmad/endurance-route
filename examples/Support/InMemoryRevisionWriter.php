@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Examples\Support;
+namespace Endurance\Route\Examples\Support;
 
-use Youmad\Endurance\Geo\PathPoint;
-use Youmad\Endurance\Geo\PathPosition;
-use Youmad\Endurance\Geo\ViaPoint;
-use Youmad\Endurance\Route\Application\Port\RouteRevisionWriter;
-use Youmad\Endurance\Route\Entity\Route;
-use Youmad\Endurance\Route\Entity\RouteRevision;
-use Youmad\Endurance\Route\ValueObject\ExpectedRouteState;
-use Youmad\Endurance\Route\ValueObject\NavigationCue;
-use Youmad\Endurance\Route\ValueObject\RouteContentSummary;
-use Youmad\Endurance\Route\ValueObject\RouteId;
-use Youmad\Endurance\Route\ValueObject\RouteRevisionId;
-use Youmad\Endurance\Route\ValueObject\RouteWaypoint;
+use Endurance\Geo\PathPoint;
+use Endurance\Geo\PathPosition;
+use Endurance\Geo\ViaPoint;
+use Endurance\Route\Application\Port\RouteRevisionWriter;
+use Endurance\Route\Entity\Route;
+use Endurance\Route\Entity\RouteRevision;
+use Endurance\Route\ValueObject\ExpectedRouteState;
+use Endurance\Route\ValueObject\NavigationCue;
+use Endurance\Route\ValueObject\RouteContentSummary;
+use Endurance\Route\ValueObject\RouteId;
+use Endurance\Route\ValueObject\RouteRevisionId;
+use Endurance\Route\ValueObject\RouteWaypoint;
 
 /** @phpstan-import-type Content from InMemoryRouteStore */
 final class InMemoryRevisionWriter implements RouteRevisionWriter

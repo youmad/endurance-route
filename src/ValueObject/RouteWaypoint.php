@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\ValueObject;
+namespace Endurance\Route\ValueObject;
 
-use Youmad\Endurance\Foundation\ValueObject\Coordinate;
-use Youmad\Endurance\Geo\Elevation;
+use Endurance\Foundation\ValueObject\Coordinate;
+use Endurance\Geo\Elevation;
 
 final readonly class RouteWaypoint
 {

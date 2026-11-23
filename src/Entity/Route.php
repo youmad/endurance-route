@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Route\Entity;
+namespace Endurance\Route\Entity;
 
-use Youmad\Endurance\Foundation\ValueObject\Instant;
-use Youmad\Endurance\Route\Exception\RouteConflict;
-use Youmad\Endurance\Route\ValueObject\ExpectedRouteState;
-use Youmad\Endurance\Route\ValueObject\RouteId;
-use Youmad\Endurance\Route\ValueObject\RouteMetadata;
-use Youmad\Endurance\Route\ValueObject\RouteRevisionId;
-use Youmad\Endurance\Route\ValueObject\RouteVersion;
+use Endurance\Foundation\ValueObject\Instant;
+use Endurance\Route\Exception\RouteConflict;
+use Endurance\Route\ValueObject\ExpectedRouteState;
+use Endurance\Route\ValueObject\RouteId;
+use Endurance\Route\ValueObject\RouteMetadata;
+use Endurance\Route\ValueObject\RouteRevisionId;
+use Endurance\Route\ValueObject\RouteVersion;
 
 final readonly class Route
 {
